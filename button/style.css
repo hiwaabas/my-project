@@ -1,0 +1,31 @@
+/* @media print {
+    .noPrint{
+      display:none;
+    }
+  }
+  body {
+
+    background-color: antiquewhite;
+  }
+  h1{
+    color:#f6f6;
+  }
+.label .ff {
+    display: inline-block;
+    width: 200px;
+
+ 
+} */
+@media print {
+    /* Apply specific styles for printing */
+    body {
+      font-size: 12pt; /* Adjust font size for better readability when printed */
+      line-height: 1.5; /* Adjust line height for better readability when printed */
+      margin: 0; /* Remove any default margins */
+    }
+    
+    /* Hide unnecessary elements when printing */
+    .no-print {
+      display: none;
+    }
+  }

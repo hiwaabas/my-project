@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3in1</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./btn.css">
+   
+</head>
+<body>
+    <div class="mode-switch">Dark Mode</div>
+<div class="mybutton">
+    <button class="radzhiv-btn-2 radzhiv-btn-2:hover" id="btn1" >clock</button>
+    <button class="radzhiv-btn-2 radzhiv-btn-2:hover" id="btn2">radio</button>
+    <button class="radzhiv-btn-2 radzhiv-btn-2:hover" id="btn3">tic-tac-toe</button>
+</div>
+
+<div class="cont-project">
+   <!-- clock  -->
+   
+   <div class="container">
+    <div class="clock">
+      <label style="--i: 1"><span>1</span></label>
+      <label style="--i: 2"><span>2</span></label>
+      <label style="--i: 3"><span>3</span></label>
+      <label style="--i: 4"><span>4</span></label>
+      <label style="--i: 5"><span>5</span></label>
+      <label style="--i: 6"><span>6</span></label>
+      <label style="--i: 7"><span>7</span></label>
+      <label style="--i: 8"><span>8</span></label>
+      <label style="--i: 9"><span>9</span></label>
+      <label style="--i: 10"><span>10</span></label>
+      <label style="--i: 11"><span>11</span></label>
+      <label style="--i: 12"><span>12</span></label>
+
+      <div class="indicator">
+        <span class="hand hour"></span>
+        <span class="hand minute"></span>
+        <span class="hand second"></span>
+      </div>
+    </div>
+
+    
+  </div>
+
+<!-- end clock  -->
+<!-- radio  -->
+<div id="audio_player">
+<main>
+    <header id="header">
+          
+        <nav>
+            <img src="img/logo.jpg" alt="">
+            <h2 id="siteName">Name Site</h2>
+            <p id="radio-title">اسم اغنية</p>
+        </nav>
+    </header>
+
+
+    <article id="player_buttons">
+        <img src="img/back.png" alt="" id="back">
+        <img src="img/play.png" alt="" id="play">
+        <img src="img/next.png" alt="" id="next">
+    </article>
+
+    <article>
+        <audio src="./audio/2020  (Nişan ) Strana evin --(MP3_320K).mp3" id="audio_file"></audio>
+        <h2>الصوت</h2>
+        <input id="volume" type="range" value="50" min="0" max="100" id="range">  
+        <h2>السرعة</h2>
+        <input id="speed" type="range" value="100" min="0" max="200" id="range">         
+    </article>
+
+    
+    <article id="colors">
+            <button id="color-1"></button>
+            <button id="color-2"></button>
+            <button id="color-3"></button>
+            <button id="color-4"></button>
+   </article>
+
+</main>
+</div>
+
+<!-- end radio  -->
+<!-- tic-tac-toe  -->
+<div class="tic-tac-toe-container">
+<div id="title">
+<h1>Tic Tac Toe</h1>
+</div>
+<div id="board">
+<div class="square" id="square0"></div>
+<div class="square" id="square1"></div>
+<div class="square" id="square2"></div>
+<div class="square" id="square3"></div>
+<div class="square" id="square4"></div>
+<div class="square" id="square5"></div>
+<div class="square" id="square6"></div>
+<div class="square" id="square7"></div>
+<div class="square" id="square8"></div>
+</div>  
+<div id="endGame">
+<input type="button" value="Restart" id="restartButton" onclick="restartButton()"/>
+</div>
+
+</div>
+
+</div>
+ 
+
+
+    <!-- end tic-tac-toe  -->
+    <script src="./jq.js"></script>
+    <script src="./js.js"></script>
+</body>
+</html>
